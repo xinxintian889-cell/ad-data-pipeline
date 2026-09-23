@@ -4,7 +4,7 @@ from datetime import datetime
 
 class DataTask(db.Model):
     """数据处理任务模型"""
-    _tablename_ = 'data_task'
+    __tablename__ = 'data_tasks'
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     file_path = db.Column(db.String(255), nullable=False)  # 数据文件路径
